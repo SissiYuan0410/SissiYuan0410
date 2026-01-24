@@ -7,22 +7,134 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>My Creative Coding Portfolio </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="project1.html">Project 1：Drop</a></li>
-                <li><a href="project2.html">Project 2：Face</a></li>
-                <li><a href="project3.html">Project 3：Person</a></li>
-                <li><a href="project4.html">Project 4：Illusion</a></li>
-                <li><a href="project5.html">Project 5：Week</a></li>
-                <li><a href="project6.html">Project 6：Game</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="reflection.html">REFLECTION</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Nav -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Sissi Yuan</a>
+      <nav class="nav-links">
+        <a href="index.html" data-nav="index">Projects</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="reflection.html" data-nav="reflection">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <p class="kicker">Design & Technology</p>
+      <h1>Interaction & game-based storytelling.</h1>
+      <p>
+        I explore how interaction can carry emotion—through playful mechanics,
+        spatial navigation, and narrative systems.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="project6.html">View featured project →</a>
+        <a class="btn" href="about.html">About</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Projects -->
+    <section class="section" style="padding-top: 18px;">
+      <h2>Selected Projects</h2>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <a class="card" href="project1.html">
+          <img class="card-media" src="assets/thumb-project1.jpg" alt="Project 1 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Project 1</div>
+            <div class="card-desc">Short description (one line).</div>
+            <div class="tags">
+              <span class="tag">p5.js</span>
+              <span class="tag">interaction</span>
+              <span class="tag">prototype</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a class="card" href="project2.html">
+          <img class="card-media" src="assets/thumb-project2.jpg" alt="Project 2 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Project 2</div>
+            <div class="card-desc">Short description (one line).</div>
+            <div class="tags">
+              <span class="tag">creative coding</span>
+              <span class="tag">visual</span>
+              <span class="tag">system</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a class="card" href="project3.html">
+          <img class="card-media" src="assets/thumb-project3.jpg" alt="Project 3 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Project 3</div>
+            <div class="card-desc">Short description (one line).</div>
+            <div class="tags">
+              <span class="tag">game</span>
+              <span class="tag">mechanics</span>
+              <span class="tag">iteration</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a class="card" href="project4.html">
+          <img class="card-media" src="assets/thumb-project4.jpg" alt="Project 4 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Project 4</div>
+            <div class="card-desc">Short description (one line).</div>
+            <div class="tags">
+              <span class="tag">web</span>
+              <span class="tag">UI</span>
+              <span class="tag">interaction</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a class="card" href="project5.html">
+          <img class="card-media" src="assets/thumb-project5.jpg" alt="Project 5 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Project 5</div>
+            <div class="card-desc">Short description (one line).</div>
+            <div class="tags">
+              <span class="tag">experiment</span>
+              <span class="tag">play</span>
+              <span class="tag">code</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project 6 (featured style by content, not color) -->
+        <a class="card" href="project6.html">
+          <img class="card-media" src="assets/thumb-project6.jpg" alt="Project 6 thumbnail">
+          <div class="card-body">
+            <div class="card-title">Autobiographical Game</div>
+            <div class="card-desc">A platformer about growing up under pressure.</div>
+            <div class="tags">
+              <span class="tag">narrative</span>
+              <span class="tag">game</span>
+              <span class="tag">p5.js</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Sissi Yuan
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
 
     <main class="home">
         <section class="intro">
