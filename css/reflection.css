@@ -1,0 +1,66 @@
+/* 反思页样式 */
+
+.reflection-container {
+    border: 2px solid #1a1a1a;
+    border-radius: 3px;
+    padding: 35px 45px;
+    position: relative;
+    background: #fffef9;
+}
+
+.reflection-container::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.reflection-header {
+    margin-bottom: 30px;
+}
+
+.reflection-title {
+    font-family: 'Caveat', cursive;
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.reflection-content {
+    font-size: 1.4rem;
+    color: #444;
+    line-height: 1.8;
+}
+
+.reflection-content p {
+    margin-bottom: 20px;
+}
+
+.reflection-content h3 {
+    font-size: 1.7rem;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.reflection-content ul {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.reflection-content li {
+    margin-bottom: 10px;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+    .reflection-container {
+        padding: 25px 20px;
+    }
+}

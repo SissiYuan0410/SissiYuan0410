@@ -1,0 +1,121 @@
+/* 关于页样式 */
+
+.about-container {
+    border: 2px solid #1a1a1a;
+    border-radius: 3px;
+    padding: 35px 45px;
+    position: relative;
+    background: #fffef9;
+}
+
+.about-container::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: -4px;
+    bottom: -4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    z-index: -1;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-title {
+    font-family: 'Caveat', cursive;
+    font-size: 2.4rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.about-avatar {
+    flex-shrink: 0;
+}
+
+.avatar-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1a1a1a;
+}
+
+.about-text {
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.4rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.about-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.about-links a {
+    padding: 10px 28px;
+    border: 2px solid #1a1a1a;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+    position: relative;
+}
+
+.about-links a::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: -3px;
+    bottom: -3px;
+    border: 1px solid #ddd;
+    z-index: -1;
+}
+
+.about-links a:hover {
+    transform: translate(-2px, -2px);
+}
+
+.about-links a:hover::before {
+    top: 5px;
+    left: 5px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .about-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-container {
+        padding: 25px 20px;
+    }
+    
+    .avatar-img {
+        width: 150px;
+        height: 150px;
+    }
+}

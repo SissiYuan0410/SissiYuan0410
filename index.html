@@ -3,37 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Sissi Yuan | Design and Technology</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
-        <h1>My Creative Coding Portfolio </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="project1.html">Project 1：Drop</a></li>
-                <li><a href="project2.html">Project 2：Face</a></li>
-                <li><a href="project3.html">Project 3：Person</a></li>
-                <li><a href="project4.html">Project 4：Illusion</a></li>
-                <li><a href="project5.html">Project 5：Week</a></li>
-                <li><a href="project6.html">Project 6：Game</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="reflection.html">REFLECTION</a></li>
-            </ul>
+    <header class="header">
+        <a href="./index.html" class="logo">Sissi Yuan</a>
+        <nav class="nav">
+            <a href="./index.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./reflection.html">Reflection</a>
         </nav>
     </header>
 
-    <main class="home">
+    <main class="main">
         <section class="intro">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Here showcases the p5.js projects I completed in the creative programming course. Click the navigation above for details.</p>
-            <img src="assets/bg.png" class="cover-img">
+            <h2 class="intro-title">Design and Technology</h2>
+            <p class="intro-text">I make interactive and game-based projects to explore emotion and storytelling.</p>
+        </section>
+
+        <section class="projects-grid">
+            <a href="./project1.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p1.png" alt="Project 1: Drop">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 1: Drop</h3>
+                </div>
+            </a>
+            <a href="./project2.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p2.png" alt="Project 2: Face">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 2: Face</h3>
+                </div>
+            </a>
+            <a href="./project3.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p3.png" alt="Project 3: Person">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 3: Person</h3>
+                </div>
+            </a>
+            <a href="./project4.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p4.png" alt="Project 4: Illusion">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 4: Illusion</h3>
+                </div>
+            </a>
+            <a href="./project5.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p5.png" alt="Project 5: Week">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 5: Week</h3>
+                </div>
+            </a>
+            <a href="./project6.html" class="project-card">
+                <div class="project-thumb">
+                    <img src="./images/p6.png" alt="Project 6: Game">
+                </div>
+                <div class="project-info">
+                    <h3 class="project-name">Project 6: Game</h3>
+                </div>
+            </a>
         </section>
     </main>
-
-    <footer>
-        <p>© 2025 My Creative Coding Portfolio | Built with p5.js & HTML/CSS</p>
-    </footer>
 </body>
 </html>

@@ -4,7 +4,8 @@ let cols;
 let heights;
 
 function setup() {
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent('canvas-container');
   colorMode(HSB, 360, 100, 100);
   noStroke();
   cols = width / size;

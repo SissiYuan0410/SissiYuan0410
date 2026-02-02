@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>About | Sissi Yuan</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
-    <header>
-        <h1>My Creative Coding Portfolio </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="project1.html">Project 1：Drop</a></li>
-                <li><a href="project2.html">Project 2：Face</a></li>
-                <li><a href="project3.html">Project 3：Person</a></li>
-                <li><a href="project4.html">Project 4：Illusion</a></li>
-                <li><a href="project5.html">Project 5：Week</a></li>
-                <li><a href="project6.html">Project 6：Game</a></li>
-                <li><a href="about.html" class="active">ABOUT</a></li>
-                <li><a href="reflection.html">REFLECTION</a></li>
-            </ul>
+    <header class="header">
+        <a href="./index.html" class="logo">Sissi Yuan</a>
+        <nav class="nav">
+            <a href="./index.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./reflection.html">Reflection</a>
         </nav>
     </header>
 
-    <main class="about-page">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="assets/avatar.png" alt="我的头像" class="avatar">
-            <div class="about-text">
-                Hello, I’m Sissi — a Shanghai-born creative currently studying Design and Technology at Parsons School of Design in New York.
-
-My practice sits between interactive media, game design, digital storytelling, and creative technology. I like exploring how technology can feel emotional instead of mechanical, how a small interaction, a playful mechanic, or a personal narrative can make someone feel connected, understood, or unexpectedly comforted.
-
-A lot of my work starts from personal memories and private feelings, like loneliness, childhood objects, everyday rituals, or tiny moments that are normally overlooked. Through design experiments, prototypes, and small playable experiences, I try to create digital spaces that are soft, human, and quietly meaningful.
-
-I’m curious about emotional computing, speculative interfaces, and the relationship between technology and the everyday self. 
-
-            Thanks for stopping by, and I hope you enjoy exploring my world.
+    <main class="main">
+        <section class="about-container">
+            <div class="about-header">
+                <h1 class="about-title">About Me</h1>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <p>© 2025 My Creative Coding Portfolio | Built with p5.js & HTML/CSS</p>
-    </footer>
+            <div class="about-content">
+                <div class="about-avatar">
+                    <img src="./assets/avatar.png" alt="Sissi Yuan" class="avatar-img">
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Sissi</h3>
+                    <p>A Shanghai-born creative currently studying Design and Technology at Parsons School of Design in New York.</p>
+                    <p>My practice sits between interactive media, game design, digital storytelling, and creative technology. I like exploring how technology can feel emotional instead of mechanical, how a small interaction, a playful mechanic, or a personal narrative can make someone feel connected, understood, or unexpectedly comforted.</p>
+                    <p>A lot of my work starts from personal memories and private feelings, like loneliness, childhood objects, everyday rituals, or tiny moments that are normally overlooked. Through design experiments, prototypes, and small playable experiences, I try to create digital spaces that are soft, human, and quietly meaningful.</p>
+                    <p>I'm curious about emotional computing, speculative interfaces, and the relationship between technology and the everyday self.</p>
+                    <p>Thanks for stopping by, and I hope you enjoy exploring my world.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -3,8 +3,9 @@ let faceColor, eyeColor;
 let x, y;
 
 function setup() {
-  createCanvas(800, 500);
-  noLoop(); 
+  let canvas = createCanvas(800, 500);
+  canvas.parent('canvas-container');
+  noLoop();
   randomizeFace(); 
 }
 

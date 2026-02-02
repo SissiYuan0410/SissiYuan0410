@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(400, 600);
+  let canvas = createCanvas(400, 600);
+  canvas.parent('canvas-container');
   stroke(0);
   strokeWeight(3);
   noFill();

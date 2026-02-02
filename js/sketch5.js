@@ -1,7 +1,8 @@
 const countsByDay = [5, 3, 1, 3, 1, 4, 2];
 
 function setup(){
-  createCanvas(600, 600);
+  let canvas = createCanvas(600, 600);
+  canvas.parent('canvas-container');
   textFont('monospace');
 }
 

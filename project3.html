@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 3：Person | My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Project 3 | Sissi Yuan</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>My Creative Coding Portfolio </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="project1.html">Project 1：Drop</a></li>
-                <li><a href="project2.html">Project 2：Face</a></li>
-                <li><a href="project3.html" class="active">Project 3：Person</a></li>
-                <li><a href="project4.html">Project 4：Illusion</a></li>
-                <li><a href="project5.html">Project 5：Week</a></li>
-                <li><a href="project6.html">Project 6：Game</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="reflection.html">REFLECTION</a></li>
-            </ul>
+    <header class="header">
+        <a href="./index.html" class="logo">Sissi Yuan</a>
+        <nav class="nav">
+            <a href="./index.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./reflection.html">Reflection</a>
         </nav>
     </header>
 
-    <main class="project-page">
-        <h2>Project 3：Person</h2>
-        <p class="project-desc">
-            His name is Channel-42.
-        </p>
-        <p class="project-desc">
-            He was once an ordinary office worker, endlessly stuck in a routine of paperwork and
-            meetings. Over time, his head was replaced by a television, broadcasting not news, but his unfinished tasks
-            and repressed emotions. His suit and tie still remind people of his human past, but his body has fused into
-            the machinery of corporate life.
-        </p>
-        <p class="project-desc">
-            He roams the office on his rolling chair-wheels, carrying static and flickering signals
-            wherever he goes.
-        </p>
+    <main class="main">
+        <article class="project-container">
+            <div class="project-header">
+                <h1 class="project-title">Project 3: Person</h1>
+                <p class="project-subtitle">Interactive Experience</p>
+            </div>
+
+            <div class="project-content-row">
+                <div id="canvas-container" class="canvas-container canvas-side"></div>
+                <div class="project-description">
+                    <h3>About This Project</h3>
+                    <p>His name is Channel-42.</p>
+                    <p>He was once an ordinary office worker, endlessly stuck in a routine of paperwork and meetings. Over time, his head was replaced by a television, broadcasting not news, but his unfinished tasks and repressed emotions. His suit and tie still remind people of his human past, but his body has fused into the machinery of corporate life.</p>
+                    <p>He roams the office on his rolling chair-wheels, carrying static and flickering signals wherever he goes.</p>
+                </div>
+            </div>
+
+            <nav class="project-nav">
+                <a href="./project2.html">Previous Project</a>
+                <a href="./project4.html">Next Project</a>
+            </nav>
+        </article>
     </main>
 
-    <footer>
-        <p>© 2025 My Creative Coding Portfolio | Built with p5.js & HTML/CSS</p>
-    </footer>
     <script src="./js/sketch3.js"></script>
-
 </body>
-
 </html>

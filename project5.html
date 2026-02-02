@@ -1,74 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 5：Week | My Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Project 5 | Sissi Yuan</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
 </head>
-
 <body>
-    <header>
-        <h1>My Creative Coding Portfolio </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="project1.html">Project 1：Drop</a></li>
-                <li><a href="project2.html">Project 2：Face</a></li>
-                <li><a href="project3.html">Project 3：Person</a></li>
-                <li><a href="project4.html">Project 4：Illusion</a></li>
-                <li><a href="project5.html" class="active">Project 5：Week</a></li>
-                <li><a href="project6.html">Project 6：Game</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="reflection.html">REFLECTION</a></li>
-            </ul>
+    <header class="header">
+        <a href="./index.html" class="logo">Sissi Yuan</a>
+        <nav class="nav">
+            <a href="./index.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./reflection.html">Reflection</a>
         </nav>
     </header>
 
-    <main class="project-page">
-        <h2>Project 5：Week</h2>
-        <p class="project-desc">
-            My Data Portrait tracks how many times I said “I’m so hungry” each day for one week.
-        </p>
-        <p class="project-desc">
-            This habit reflects my daily mood and eating schedule. It also shows how my hunger changes depending on my
-            classes, sleep, and stress.
-            Each circle in my visualization represents one day of the week.
-            The size of each circle shows how many times I said “I’m so hungry” that day — the bigger the circle, the
-            hungrier I felt.
-            The color of the circle goes from light brown to deep red, representing time from morning to night.
-            All the circles together look like an expanding and shrinking stomach, showing how my hunger grows and calms
-            down throughout the week.
-            I collected my data by writing down every time I said “I’m so hungry” for seven days, including when and
-            where I said it.
-            Then I counted the total number for each day and turned it into an array in p5.js, such as [5, 3, 1, 3, 1,
-            4, 2].
-            I designed the visualization with one circle per day.
-            The radius of the circle grows based on how many times I said the phrase, and the color changes to match the
-            time of day.
-            In my sketches, I imagined the circles as parts of a breathing stomach — slightly pulsing to show how hunger
-            never really disappears but keeps coming back.
-        </p>
-        <p class="project-desc">
-            The animation makes the data feel more alive and close to the body.
-            By tracking how often I said “I’m so hungry,” I realized that my hunger is not only about needing food, it
-            also reflects my emotions and routines.
-            I noticed I say it more when I am tired, anxious, or when I stay up late.
-            Through visualizing this data, I gained a clearer sense of how my body and feelings interact with time and
-            stress.
-            However, translating such a personal and funny habit into numbers made me realize how data can never fully
-            show the emotions behind it.
-            Still, this project helped me appreciate the rhythm of my daily life and reminded me to take better care of
-            both my body and my energy.
-        </p>
+    <main class="main">
+        <article class="project-container">
+            <div class="project-header">
+                <h1 class="project-title">Project 5: Week</h1>
+                <p class="project-subtitle">Data Portrait</p>
+            </div>
+
+            <div id="canvas-container" class="canvas-container canvas-auto"></div>
+
+            <div class="project-description">
+                <h3>About This Project</h3>
+                <p>My Data Portrait tracks how many times I said "I'm so hungry" each day for one week.</p>
+                <p>This habit reflects my daily mood and eating schedule. It also shows how my hunger changes depending on my classes, sleep, and stress. Each circle in my visualization represents one day of the week. The size of each circle shows how many times I said "I'm so hungry" that day — the bigger the circle, the hungrier I felt. The color of the circle goes from light brown to deep red, representing time from morning to night.</p>
+                <p>All the circles together look like an expanding and shrinking stomach, showing how my hunger grows and calms down throughout the week. I collected my data by writing down every time I said "I'm so hungry" for seven days, including when and where I said it.</p>
+                <p>By tracking how often I said "I'm so hungry," I realized that my hunger is not only about needing food, it also reflects my emotions and routines. I noticed I say it more when I am tired, anxious, or when I stay up late. Through visualizing this data, I gained a clearer sense of how my body and feelings interact with time and stress.</p>
+            </div>
+
+            <nav class="project-nav">
+                <a href="./project4.html">Previous Project</a>
+                <a href="./project6.html">Next Project</a>
+            </nav>
+        </article>
     </main>
 
-    <footer>
-        <p>© 2025 My Creative Coding Portfolio | Built with p5.js & HTML/CSS</p>
-    </footer>
     <script src="./js/sketch5.js"></script>
 </body>
-
 </html>

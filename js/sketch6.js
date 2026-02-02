@@ -4,6 +4,7 @@ const PREVENT_KEYS = [32, 37, 38, 39, 40];
 
 function setup() {
   canvas = createCanvas(800, 416);
+  canvas.parent('canvas-container');
   canvas.elt.tabIndex = 0;
   canvas.elt.focus();
 
