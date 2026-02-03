@@ -25,7 +25,7 @@
 .intro-title {
     font-family: 'Caveat', cursive;
     font-size: 2rem;
-    color: #1a1a1a;
+    color: #e07850;
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -74,6 +74,13 @@
     top: 8px;
     left: 8px;
 }
+
+.project-card:nth-child(1) .project-info { background-color: #fff5f0; }
+.project-card:nth-child(2) .project-info { background-color: #f0f7ff; }
+.project-card:nth-child(3) .project-info { background-color: #f5fff0; }
+.project-card:nth-child(4) .project-info { background-color: #fff8f0; }
+.project-card:nth-child(5) .project-info { background-color: #f8f0ff; }
+.project-card:nth-child(6) .project-info { background-color: #f0fffa; }
 
 .project-thumb {
     width: 100%;

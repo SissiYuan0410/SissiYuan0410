@@ -73,6 +73,10 @@ img {
     transform-origin: left;
 }
 
+.nav a:hover {
+    color: #e07850;
+}
+
 /* 主内容区 */
 .main {
     max-width: 1100px;
