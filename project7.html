@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 7 | Sissi Yuan</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <style>
+        .sub-projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .sub-project-card {
+            border: 2px solid #1a1a1a;
+            border-radius: 3px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: #fffef9;
+        }
+
+        .sub-project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 0 #ccc;
+        }
+
+        .sub-project-thumb {
+            height: 160px;
+            background-color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #1a1a1a;
+            font-family: 'Caveat', cursive;
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            overflow: hidden;
+        }
+
+        .sub-project-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sub-project-info {
+            padding: 18px 20px;
+        }
+
+        .sub-project-name {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+        }
+
+        .sub-project-desc {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo">Sissi Yuan</a>
+        <nav class="nav">
+            <a href="./index.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./reflection.html">Reflection</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="project-container">
+            <div class="project-header">
+                <h1 class="project-title">Project 7: Interactive Typography</h1>
+                <p class="project-subtitle">A collection of playful text-based interactions</p>
+            </div>
+
+            <div class="project-description">
+                <p>This series explores how typography can become alive through interaction. Each piece transforms
+                    static letters into dynamic, playful experiences—whether through biting, solving, or swimming.</p>
+            </div>
+
+            <section class="sub-projects-grid">
+                <a href="./project7_1.html" class="sub-project-card">
+                    <div class="sub-project-thumb">
+                        <img src="./images/p7_1.png" alt="Apple">
+                    </div>
+                    <div class="sub-project-info">
+                        <h3 class="sub-project-name">Apple</h3>
+                        <p class="sub-project-desc">Click to take a bite out of the word</p>
+                    </div>
+                </a>
+                <a href="./project7_2.html" class="sub-project-card">
+                    <div class="sub-project-thumb">
+                        <img src="./images/p7_2.png" alt="Logic">
+                    </div>
+                    <div class="sub-project-info">
+                        <h3 class="sub-project-name">Logic</h3>
+                        <p class="sub-project-desc">Solve math problems hidden in letters</p>
+                    </div>
+                </a>
+                <a href="./project7_3.html" class="sub-project-card">
+                    <div class="sub-project-thumb">
+                        <img src="./images/p7_3.png" alt="Swim">
+                    </div>
+                    <div class="sub-project-info">
+                        <h3 class="sub-project-name">Swim</h3>
+                        <p class="sub-project-desc">Control swimming text with WASD keys</p>
+                    </div>
+                </a>
+            </section>
+
+            <nav class="project-nav">
+                <a href="./index.html">Back to Projects</a>
+                <a href="./project6.html">Previous Project</a>
+            </nav>
+        </article>
+    </main>
+</body>
+
+</html>

@@ -81,6 +81,7 @@
 .project-card:nth-child(4) .project-info { background-color: #fff8f0; }
 .project-card:nth-child(5) .project-info { background-color: #f8f0ff; }
 .project-card:nth-child(6) .project-info { background-color: #f0fffa; }
+.project-card:nth-child(7) .project-info { background-color: #fff0f8; }
 
 .project-thumb {
     width: 100%;
