@@ -2,126 +2,153 @@
 
 /* 介绍区域 */
 .intro {
-    border: 2px solid #1a1a1a;
-    border-radius: 3px;
-    padding: 30px 40px;
-    margin-bottom: 60px;
-    position: relative;
-    background: #fffef9;
+  border: 2px solid #1a1a1a;
+  border-radius: 3px;
+  padding: 30px 40px;
+  margin-bottom: 60px;
+  position: relative;
+  background: #fffef9;
 }
 
 .intro::before {
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    right: -4px;
-    bottom: -4px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: -4px;
+  bottom: -4px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  z-index: -1;
 }
 
 .intro-title {
-    font-family: 'Caveat', cursive;
-    font-size: 2rem;
-    color: #e07850;
-    margin-bottom: 10px;
-    font-weight: 500;
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: #e07850;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .intro-text {
-    font-family: 'Caveat', cursive;
-    font-size: 1.6rem;
-    color: #444;
-    line-height: 1.6;
+  font-family: "Caveat", cursive;
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1.6;
 }
 
 /* 项目网格 */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
 }
 
 .project-card {
-    border: 2px solid #1a1a1a;
-    border-radius: 2px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.2s;
-    background: #fffef9;
-    position: relative;
+  border: 2px solid #1a1a1a;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  background: #fffef9;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: -5px;
-    bottom: -5px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  z-index: -1;
 }
 
 .project-card:hover {
-    transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
 }
 
 .project-card:hover::before {
-    top: 8px;
-    left: 8px;
+  top: 8px;
+  left: 8px;
 }
 
-.project-card:nth-child(1) .project-info { background-color: #fff5f0; }
-.project-card:nth-child(2) .project-info { background-color: #f0f7ff; }
-.project-card:nth-child(3) .project-info { background-color: #f5fff0; }
-.project-card:nth-child(4) .project-info { background-color: #fff8f0; }
-.project-card:nth-child(5) .project-info { background-color: #f8f0ff; }
-.project-card:nth-child(6) .project-info { background-color: #f0fffa; }
-.project-card:nth-child(7) .project-info { background-color: #fff0f8; }
+.project-card:nth-child(1) .project-info {
+  background-color: #fff5f0;
+}
+.project-card:nth-child(2) .project-info {
+  background-color: #f0f7ff;
+}
+.project-card:nth-child(3) .project-info {
+  background-color: #f5fff0;
+}
+.project-card:nth-child(4) .project-info {
+  background-color: #fff8f0;
+}
+.project-card:nth-child(5) .project-info {
+  background-color: #f8f0ff;
+}
+.project-card:nth-child(6) .project-info {
+  background-color: #f0fffa;
+}
+.project-card:nth-child(7) .project-info {
+  background-color: #fff0f8;
+}
+.project-card:nth-child(8) .project-info {
+  background-color: #f4f7ed;
+  flex: 1;
+}
+.project-card:nth-child(9) .project-info {
+  background-color: #fff9ed;
+}
+.project-card:nth-child(10) .project-info {
+  background-color: #f0f4ff;
+}
 
 .project-thumb {
-    width: 100%;
-    height: 160px;
-    background-color: #f8f7f2;
-    border-bottom: 2px solid #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 160px;
+  background-color: #f8f7f2;
+  border-bottom: 2px solid #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-info {
-    padding: 15px 20px;
+  padding: 15px 20px;
 }
 
 .project-name {
-    font-family: 'Caveat', cursive;
-    font-size: 1.5rem;
-    color: #1a1a1a;
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: #1a1a1a;
 }
 
 /* 响应式 */
 @media (max-width: 900px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .intro {
-        padding: 25px 20px;
-    }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    padding: 25px 20px;
+  }
 }
